@@ -14,7 +14,7 @@
         "import_statements": 314
       },
       "webpack": {
-        "code": 314862
+        "code": 314853
       }
     }
   },
@@ -33,7 +33,7 @@
         "import_statements": 314
       },
       "webpack": {
-        "code": 305212
+        "code": 305203
       }
     }
   }
