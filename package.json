@@ -17,11 +17,12 @@
   "main": "dist/index.production.cjs.js",
   "module": "dist/index.production.esm.js",
   "scripts": {
-    "build": "yarn build:dev && yarn build:prod",
+    "build": "yarn build:dev && yarn build:prod && yarn build:stories",
     "build-docs": "build-storybook --docs",
     "build-storybook": "build-storybook",
     "build:dev": "yarn rollup -c --environment BUILD:development",
     "build:prod": "yarn rollup -c --environment BUILD:production",
+    "build:stories": "yarn rollup --config rollup.config.stories.js",
     "chromatic": "CHROMATIC_APP_CODE=9ofhn0iql7n chromatic test",
     "lint": "eslint .",
     "lint:js": "cross-env NODE_ENV=production eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.html,.ts,.tsx,.mjs --report-unused-disable-directives",
